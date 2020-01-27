@@ -1,0 +1,10 @@
+[27 Jan 2020]	1. Decimal value of 37 is 55
+				Explained :  Hex to Dec - (37)^16 = ( 3*16^1 + 7*16^0)^10 = (48 + 7)^10 = (55)^10
+				(255)^10 = (ff)^16
+				2. background : linear-gradient(direction, color1, color2,... color_n, transparency(b/w 0 and 1))
+				3. In case the body tag, only contains a div block, then the css styles for the body tag wont have any effect, there must be something else than the div block inside the body... even a <br> would work
+				4. HTTP Codes- 
+				200 -OK
+				304 - Not Modified (using cached copy)
+				404 - Not Found
+				504 - GateWay Timeout (timeout from server's side)

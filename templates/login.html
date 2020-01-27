@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/login.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+	<form action="/check_user" method="POST">
+		<div class="login_box">
+			<h3>Login</h3>
+			<div class="textbox">
+				<input type="text" placeholder="Username" name="user_name" value="">
+			</div>
+			<div class="textbox">		
+				<input type="text" placeholder="Password" name="password" value="">
+			</div>
+			<input type="submit" id="login_btn" name="Submit" value="Log In">
+		</div>
+	</form>
+	<br>
+</body>
+</html>

@@ -1,0 +1,7 @@
+When in double quotes convert it into a heading,
+and when b/t /*   */, convert into the pre, (ie. code)
+
+
+Navigation Menu -> Login/Register (For temporary use, have the IP as the login)
+
+one table for each user (create table)...

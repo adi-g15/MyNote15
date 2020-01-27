@@ -1,0 +1,11 @@
+sqlite3 is a built-in library, we just need to import it...
+The steps of handling sqlite3 databases are : 
+1. Connect to a DB
+2. Create a cursor object
+3. Write an SQL query
+4. Commit Changes
+5. Close database connection
+
+Notes - the cursor is used mostly for executing commands, and for connecting to the outside world, eg. opening closing databases, we use the connection
+
+After a SELECT command is executed... we can use the cursor object to 'fetchAll()'... it returns a list, having elements as tuples, where each tuple is a row

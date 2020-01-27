@@ -1,0 +1,35 @@
+/*@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*/
+.login_box{
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: rgba(55,185,255);
+}
+
+.login_box h3{
+	float: left;
+	font-size: 26px;
+	border-bottom: 3px solid #000000;
+	margin-bottom: 20px;
+	padding: 6px 0;
+	padding-right: 6px;
+}
+
+.login_box input{
+	width: 100%;
+	overflow: hidden;
+	padding: 4px;
+	margin: 4px;
+	border: none;
+	background: transparent;
+/*	outline: none;
+*/	border-bottom: 1px solid;
+}
+
+.login_box #login_btn{
+	background: solid #ffffff;
+	width: 50%;
+}
