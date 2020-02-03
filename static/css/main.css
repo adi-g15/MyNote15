@@ -1,13 +1,29 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
 	font-family: sans-serif;	/*Default in firefox atleast*/
-	background: linear-gradient(to right, rgba(55,185,233,0), rgba(55,185,233,1));
+/*	background: linear-gradient(127.55deg, #1E1818 65.25%, rgba(72, 65, 65, 0) 91.97%, rgba(179, 164, 164, 0.609) 91.97%, rgba(224, 215, 215, 0.5607) 91.97%);
+*/	background: linear-gradient(to right, rgba(55,185,233,0), rgba(55,185,233,1));
 /*	background: url('../img/bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;	
 /*	background-image: linear-gradient(to bottom right, red, yellow);
 	background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))	/*the last 0 means full transparency, and 1 means full color*/
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+/*	background-color: linear-gradient(to bottom, #5F6CE2 100%, #000000 0%);
+*/	background-color: #5F6CE2;
+	font-family: 'Poppins', sans-serif;
 }
 
 .the_note{
@@ -33,4 +49,43 @@ line-height: 4000%;
 
 .list_notes{
 	float: right;
+}
+
+.navlinks{
+	display: flex;
+	justify-content: space-around;
+	width: 30%
+}
+
+.navlinks li{
+	list-style: none;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 30%;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.hidden_input{
+	display: none;
+}
+
+.burger_nav{
+	display: none;	/*Elements of burger class wont be shown*/
+}
+
+.burger_nav div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 4px;
+}
+
+@media screen and (max-width: 1000px){
+/*	body{
+		display: none;
+	}
+*/	.navlinks{
+		width: 50%;
+	}
 }

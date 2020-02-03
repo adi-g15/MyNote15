@@ -3,16 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<title>MyNote</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
 </head>
 <body>
-	<div class="nav_bar"></div>
+	<header>
+	<nav class="nav_bar">
+		<div class="app_logo">
+			<img src="../static/img/MyNote_Logo.svg" alt="logo">
+		</div>
+		<ul class="navlinks">
+			<li>Home</li>
+			<li>Suggestion</li>
+			<li>About</li>
+			<li>Login/Register</li>
+		</ul>
+		<div class="burger_nav">	<!--For navigation on mobile-->
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+	</header>
 	<form action="/add_note" method="POST">
 	<div class="the_note">
-		<input type="submit" name="Save" value="Save">
-		<input type="text" name="Heading" class="Note_Name" placeholder="Heading">
-		<br><hr>
-		<input type="text" name="Note_Area" placeholder="Write your note here..." id='Note_Area'>
+		<div class="hidden_input">
+			<input type="text" name="IP Address">
+		</div>
+		<input class="Submit_btn" type="submit" name="Save" value="Save">
+		<div class="Note_Name">
+			<input type="text" name="Heading" placeholder="Heading">
+		</div>
+		<hr>
+		<div class="Note_Area">
+			<input type="text" name="Note_Area" placeholder="Write your note here...">
+		</div>
 	</div>
 	</form>
 	<div class="list_notes">

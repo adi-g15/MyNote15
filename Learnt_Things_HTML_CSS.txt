@@ -8,3 +8,20 @@
 				304 - Not Modified (using cached copy)
 				404 - Not Found
 				504 - GateWay Timeout (timeout from server's side)
+
+				5. <div> vs <section> vs <nav> -> div(divide) iss totally non-semantic, it doesn't tell anything on its own. While section is quite explicit in the way that it tells and separates contents into section. And nav is a new HTML5 element, and is a 'specialization' of a div element, used specifically for navigation bar... div can do almost all, but if possible use the ones that do that work, since it makes code more easier to read, and debug
+				
+				6. Symbols for HTML entities -> '&lt' AND '&#60' is for '<' (less than)
+				#9658 is the element_code for play button
+
+				7. <div> and <span> element are two 'meaningless' elements... The main difference b/w them is that <div> separates the block vertically from content prev and after, while span does so horizontally
+
+				8. We can 'kind of' imitate rows of a table using <div> blocks... ie. a div block for wrapping all rows(ie. it will be the table), and a div for each row(ie. replacing tr)
+
+				9. <strong></> mostly bolds the text, but what it actually tells is that it's the important element, for eg. voice synthesis will read out that part with more emphasis, since blind people won't be able to see the bold text either
+
+				10. HTML removes all of the extra spaces after any element whether it's a space or tab, nor even a newline... for eg. <p>Hi Aditya</p> and <p>Hi Aditya           </p> will be treated equally
+
+				# <a> meant 'anchor tag'
+				  It's target attribute -> it is by default target='_self'
+				  And, to open in another tab, set target='_blank'
