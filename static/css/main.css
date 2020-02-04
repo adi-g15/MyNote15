@@ -21,9 +21,9 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
-/*	background-color: linear-gradient(to bottom, #5F6CE2 100%, #000000 0%);
-*/	background-color: #5F6CE2;
-	font-family: 'Poppins', sans-serif;
+	background-color: #5F6CE2;
+/*	background-color: rgba(95,109,226, 0.8)
+*/	font-family: 'Poppins', sans-serif;
 }
 
 .the_note{
@@ -40,11 +40,51 @@ nav{
 	margin: 4px;
 }
 
-.the_note #Note_Area{
-display: inline-block;
-padding-left: 5px;
-line-height: 4000%;
-/*	height: 50%; */
+/*
+.logo{
+	position: absolute;
+	width: 435px;
+	height: 98px;
+	left: 0px;
+	top: 13px;
+
+	font-family: 'Abel', sans-serif;
+	font-size: 48px;
+	line-height: 72px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+*/
+
+
+
+/*
+Why is it not working as a class, but it's height can be changed when changing property using id*/
+
+.the_note .Note_Name input{
+	font-size: 1rem;
+	font-weight: bold;
+	border: 2px solid grey;
+	border-radius: 3px;
+	padding: 6px;
+}
+
+.the_note .Note_Name input:focus{
+		border: 2px solid #555;
+	}
+
+.the_note .Note_Area input{
+text-align: left;
+padding-top: 0;
+padding-left: 0;
+padding-right: 0.4px;
+padding-bottom: 0.4em;
+height: 600px;
+font-size: 1rem;
+border-radius: 3px;
+border: 1px solid black;
 }
 
 .list_notes{
@@ -54,10 +94,11 @@ line-height: 4000%;
 .navlinks{
 	display: flex;
 	justify-content: space-around;
-	width: 30%
+	width: 30%;
 }
 
 .navlinks li{
+	cursor: pointer;
 	list-style: none;
 	color: white;
 	text-transform: uppercase;

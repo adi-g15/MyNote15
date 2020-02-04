@@ -25,3 +25,43 @@
 				# <a> meant 'anchor tag'
 				  It's target attribute -> it is by default target='_self'
 				  And, to open in another tab, set target='_blank'
+
+				11. Elements inside <table> ->
+					<tr> - Row
+					<th> - Heading
+					<td> - Column
+
+				12. CSS takes whatever last defined style for an element is present
+
+				13.	CSS Selector Cominations
+				For eg. .class1.class2{/*Only apply for elements having both classes*/} 
+				h1.class1{
+					//Applies to all <h1> tags that have class as 'class1'
+				}
+				For eg.
+					.ancestor .child{
+						property: value;
+					}
+					div p{
+					/*Applies only to <p> tags 'just' inside a <div> block*/
+					}
+
+					Difference - Space between both
+
+					It will be applied iff class='child' is inside some tag with class='ancestor'
+				For eg.
+					.brother1, .brother2{
+						/*Applies to any element with 'either' of them*/
+					}
+
+				14. Element selectors are the lowest level selector, and are maostly overridden by class selectors, which themselves can only be overridden by id selectors... since an element can have multiple classes, but can have only one id... and that too should be unique, but html actually doesn't enforce this.
+				More Advance Eg.
+					#id.class.class2 {/*Will override the below block's properties, even though it appears earlier*/}
+
+					.class.class2.class3{
+						color: /*Gives color to text*/
+						height: /*Height of div block*/
+						width: /*Width of div block, percentage is relative to the width of the parent; '1em'='16px' and is mostly used in cases of fonts, and is relative to the current font (2em means 2 times the 'current font' (ie. either the body, all, or its parent) size); rem is similar to em in sense that it scales off the font size, but is different since it scales off relative to the font-size of the root element (ie. relative to the default and is independent to its parent, ie. 16px)*/
+						padding: /*Space from its own border*/
+						margin: /*Space from surrounding objects*/
+					}
